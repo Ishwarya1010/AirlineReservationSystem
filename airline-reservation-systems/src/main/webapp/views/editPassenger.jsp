@@ -9,7 +9,7 @@
 <body>
 	<h1>Edit Passenger Details</h1>
 	<form method="post" action="/updatePassengers">
-		<table style="with: 80%">
+		<table style="with: 80%" align="center">
 			<tr>
 				<td>FirstName</td>
 				<td><input type="text" name="firstName" required="required" /></td>
@@ -71,8 +71,14 @@
 				<td>Secondary Phone</td>
 				<td><input type="text" name="secondaryPhone" /></td>
 			</tr>
-		</table>
+		<tr>
+		<td>
 		<input type="submit" value="Submit" />
+		</td>
+		<td>
+		<input type="button" onClick="window.location.href='http://localhost:8080/findFlights;" value="Home" />
+		</td>
+		</table>
 	</form>
 </body>
 </html>

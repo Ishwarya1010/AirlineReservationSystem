@@ -12,7 +12,7 @@
 	<div>
 		<h1>Add Passenger Details</h1>
 		<form method="post" action="/addPassengers">
-			<table style="with: 80%">
+			<table style="with: 80%" align="center">
 				<tr>
 					<td>Title</td>
 					<td><select name="title" id="title">

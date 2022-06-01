@@ -39,7 +39,7 @@
 			}
 		}
 	</script>
-	<table border=1>
+	<table border=1 align="center">
 		<tr>
 			<th>Carrier Code</th>
 			<th>Number Of Stops</th>
@@ -64,5 +64,6 @@
 			</c:forEach>
 		</c:forEach>
 	</table>
+	<input type="button" onclick="location.href='/findFlights'" value= "Home">
 </body>
 </html>
