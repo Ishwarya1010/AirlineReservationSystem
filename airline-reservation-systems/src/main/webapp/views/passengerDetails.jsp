@@ -9,10 +9,10 @@
 
 <body>
 
-	<div>
+	<div align="center">
 		<h1>Add Passenger Details</h1>
 		<form method="post" action="/addPassengers">
-			<table style="with: 80%" align="center">
+			<table style="with: 80%">
 				<tr>
 					<td>Title</td>
 					<td><select name="title" id="title">
@@ -82,7 +82,7 @@
 					<td><input type="text" name="secondaryPhone" /></td>
 				</tr>
 			</table>
-			<input type="submit" value="Submit" />
+			<input  type="submit" value="Submit" />
 		</form>
 	</div>
 </body>

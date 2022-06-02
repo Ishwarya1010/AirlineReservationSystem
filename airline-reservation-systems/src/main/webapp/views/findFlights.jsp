@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="/getFlights">
-		<div align="right">
+		<div  style="width:75%;" align="right">
 			<input type="button" onclick="location.href='/selectBooking'"
 				value="Booking Details" />
 		</div>

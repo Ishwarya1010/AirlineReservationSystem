@@ -45,8 +45,13 @@
 					href="/editPassenger?pid=${ bookingdetail.getPassenger_id()}">Edit</a>
 			</tr>
 		</c:forEach>
+	<tr><td>
+	<a  href="/deleteBooking">Delete Booking</a>
+	</td>
+	<td>
+	<a  href="/findFlights">Home</a>
+	</td>
+	</tr>
 	</table>
-	<a href="/deleteBooking">Delete Booking</a>
-	<a href="/findFlights">Home</a>
 </body>
 </html>

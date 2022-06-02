@@ -39,31 +39,35 @@
 			}
 		}
 	</script>
-	<table border=1 align="center">
-		<tr>
-			<th>Carrier Code</th>
-			<th>Number Of Stops</th>
-			<th>Duration</th>
-			<th>Price</th>
-		</tr>
+	<div align="center">
+		<table border=1>
+			<tr>
+				<th>Carrier Code</th>
+				<th>Number Of Stops</th>
+				<th>Duration</th>
+				<th>Price</th>
+			</tr>
 
-		<c:forEach items="${flights.getData()}" var="flight">
-			<c:forEach items="${flight.getItineraries()}" var="itineraries">
-				<c:forEach items="${itineraries.getSegments()}" var="segment"
-					varStatus="status">
-					<tr id="${flight.id}+${segment.id}">
-						<td class="row-data">
-							${segment.getOperating().getCarrierCode()}</td>
-						<td class="row-data">${segment.getNumberOfStops()}</td>
-						<td class="row-data">${segment.getDuration()}</td>
-						<td class="row-data">${flight.getPrice().getGrandTotal()}</td>
-						<td>
-							<button type="submit" onclick="store()">select</button>
-						</td>
+			<c:forEach items="${flights.getData()}" var="flight">
+				<c:forEach items="${flight.getItineraries()}" var="itineraries">
+					<c:forEach items="${itineraries.getSegments()}" var="segment"
+						varStatus="status">
+						<tr id="${flight.id}+${segment.id}">
+							<td class="row-data">
+								${segment.getOperating().getCarrierCode()}</td>
+							<td class="row-data">${segment.getNumberOfStops()}</td>
+							<td class="row-data">${segment.getDuration()}</td>
+							<td class="row-data">${flight.getPrice().getGrandTotal()}</td>
+							<td>
+								<button type="submit" onclick="store()">select</button>
+							</td>
+					</c:forEach>
 				</c:forEach>
 			</c:forEach>
-		</c:forEach>
-	</table>
-	<input type="button" onclick="location.href='/findFlights'" value= "Home">
+		</table>
+		<input type="button" onclick="location.href='/findFlights'"
+			value="Home">
+	</div>
+
 </body>
 </html>

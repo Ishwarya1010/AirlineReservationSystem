@@ -7,14 +7,16 @@
 <title>Select Booking</title>
 </head>
 <body>
-	<form action="/viewBooking">
-		<table style="with: 80%" align="center">
-			<tr>
-				<td>Booking Id</td>
-				<td><input type="text" name="booking_id" /></td>
-			</tr>
-		</table>
-		<input type="submit" value="Submit" />
-	</form>
+	<div align="center">
+		<form action="/viewBooking">
+			<table style="with: 80%" align="center">
+				<tr>
+					<td>Booking Id</td>
+					<td><input type="text" name="booking_id" /></td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
 </body>
 </html>

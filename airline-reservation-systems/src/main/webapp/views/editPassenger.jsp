@@ -7,9 +7,10 @@
 <title>Edit Passenger</title>
 </head>
 <body>
+<div align="center">
 	<h1>Edit Passenger Details</h1>
 	<form method="post" action="/updatePassengers">
-		<table style="with: 80%" align="center">
+		<table style="with: 80%" >
 			<tr>
 				<td>FirstName</td>
 				<td><input type="text" name="firstName" required="required" /></td>
@@ -80,5 +81,6 @@
 		</td>
 		</table>
 	</form>
+	</div>
 </body>
 </html>
